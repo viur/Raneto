@@ -310,6 +310,7 @@ var Raneto = function () {
             show_on_home: dirMetadata.show_on_home ? dirMetadata.show_on_home === 'true' : _this2.config.show_on_home_default,
             is_index: false,
             is_directory: true,
+            is_shown: activePageSlug.startsWith('/'+shortPath),
             class: 'category-' + _this2.cleanString(shortPath),
             sort: dirMetadata.sort || sort,
             files: []
