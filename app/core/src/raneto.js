@@ -235,10 +235,10 @@ class Raneto {
           show_on_home: dirMetadata.show_on_home ? (dirMetadata.show_on_home === 'true') : this.config.show_on_home_default,
           is_index : false,
           is_directory: true,
-          is_shown: activePageSlug.startsWith('/'+shortPath),
+          is_shown : activePageSlug.startsWith('/'+shortPath),
           class    : 'category-' + this.cleanString(shortPath),
           sort     : dirMetadata.sort || sort,
-          image: dirMetadata.image,
+          image    : dirMetadata.image,
           description: dirMetadata.description,
           files    : []
         });
