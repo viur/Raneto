@@ -305,17 +305,17 @@ var Raneto = function () {
           }
 
           filesProcessed.push({
-            slug     : shortPath,
-            title    : dirMetadata.title || _s.titleize(_s.humanize(path.basename(shortPath))),
-            show_on_home: dirMetadata.show_on_home ? (dirMetadata.show_on_home === 'true') : this.config.show_on_home_default,
-            is_index : false,
+            slug: shortPath,
+            title: dirMetadata.title || _s.titleize(_s.humanize(path.basename(shortPath))),
+            show_on_home: dirMetadata.show_on_home ? dirMetadata.show_on_home === 'true' : _this2.config.show_on_home_default,
+            is_index: false,
             is_directory: true,
-            is_shown : activePageSlug.startsWith('/'+shortPath),
-            class    : 'category-' + this.cleanString(shortPath),
-            sort     : dirMetadata.sort || sort,
+            is_shown: activePageSlug.startsWith('/'+shortPath),
+            class: 'category-' + _this2.cleanString(shortPath),
+            sort: dirMetadata.sort || sort,
             image    : dirMetadata.image,
             description: dirMetadata.description,
-            files    : []
+            files: []
           });
         }
 
