@@ -313,6 +313,8 @@ var Raneto = function () {
             is_shown: activePageSlug.startsWith('/'+shortPath),
             class: 'category-' + _this2.cleanString(shortPath),
             sort: dirMetadata.sort || sort,
+            image: dirMetadata.image,
+            description: dirMetadata.description,
             files: []
           });
         }
